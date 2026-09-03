@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safe2Sail — Sicher an Bord. Lückenlos dokumentiert.</title>
+  <meta name="description" content="Safe2Sail digitalisiert die Crew-Sicherheitsunterweisung an Bord: Briefing lesen, Verständnis bestätigen, digital unterschreiben — fertiges Protokoll fürs Logbuch." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2222%22%20fill%3D%22%230B2545%22/%3E%3Crect%20x%3D%2226%22%20y%3D%2216%22%20width%3D%222.6%22%20height%3D%2266%22%20rx%3D%221.3%22%20fill%3D%22%23D4A24C%22/%3E%3Cpath%20d%3D%22M18%2080%20Q%2050%2092%2C%2082%2080%20L%2078%2086%20Q%2050%2096%2C%2022%2086%20Z%22%20fill%3D%22%23D4A24C%22/%3E%3Cpath%20d%3D%22M25.4%2074%20L%2025.4%2030%20C%2016%2048%2C%2015%2064%2C%2018%2074%20Z%22%20fill%3D%22%23D4A24C%22%20opacity%3D%220.9%22/%3E%3Cpath%20d%3D%22M28.6%2018%20C%2055%2024%2C%2070%2046%2C%2072%2074%20L%2028.6%2074%20Z%22%20fill%3D%22%23123054%22%20stroke%3D%22%23D4A24C%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22round%22/%3E%3Cpath%20d%3D%22M38%2056%20L%2047%2065%20L%2064%2040%22%20fill%3D%22none%22%20stroke%3D%22%23EEF4ED%22%20stroke-width%3D%225.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#0B2545" />
+  <meta property="og:title" content="Safe2Sail — Sicher an Bord. Lückenlos dokumentiert." />
+  <meta property="og:description" content="Die Crew-Sicherheitsunterweisung digital: Briefing lesen, Verständnis bestätigen, unterschreiben — fertiges Protokoll fürs Logbuch." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://safe2sail.de/info.html" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 100 100" aria-hidden="true"><rect x="26" y="16" width="2.6" height="66" rx="1.3" fill="#D4A24C"/><path d="M18 80 Q 50 92, 82 80 L 78 86 Q 50 96, 22 86 Z" fill="#D4A24C"/><path d="M28.6 18 C 55 24, 70 46, 72 74 L 28.6 74 Z" fill="#123054" stroke="#D4A24C" stroke-width="2" stroke-linejoin="round"/><path d="M25.4 74 L 25.4 30 C 16 48, 15 64, 18 74 Z" fill="#D4A24C" opacity="0.9"/><path d="M38 56 L 47 65 L 64 40" fill="none" stroke="#EEF4ED" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="wordmark">safe<span class="two">2</span>sail</span>
+    </a>
+    <nav class="nav-links">
+      <a href="/">App</a>
+      <a href="info.html">Über Safe2Sail</a>
+      <a href="support.html">Support</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <!-- Animiertes Markenzeichen: Boot wippt (3,4 s) und schaukelt (4,6 s),
+         die Wellenkaemme undulieren per d-Morph im selben Takt — identisch
+         zur Animation in der App. Reines CSS + SVG, kein JavaScript. -->
+    <div class="sail-anim" aria-hidden="true">
+      <div class="boat-bob"><div class="boat-rock">
+        <svg viewBox="0 0 100 100"><rect x="26" y="16" width="2.6" height="66" rx="1.3" fill="#D4A24C"/><path d="M18 80 Q 50 92, 82 80 L 78 86 Q 50 96, 22 86 Z" fill="#D4A24C"/><path d="M25.4 74 L 25.4 30 C 16 48, 15 64, 18 74 Z" fill="#D4A24C" opacity="0.9"/><path d="M28.6 18 C 55 24, 70 46, 72 74 L 28.6 74 Z" fill="#123054" stroke="#D4A24C" stroke-width="2" stroke-linejoin="round"/><path d="M38 56 L 47 65 L 64 40" fill="none" stroke="#EEF4ED" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div></div>
+      <div class="wave-float">
+        <svg viewBox="0 0 100 100">
+          <path fill="none" stroke="#EEF4ED" stroke-width="1.8" stroke-linecap="round">
+            <animate attributeName="d" dur="3.4s" repeatCount="indefinite"
+              calcMode="spline" keyTimes="0;0.5;1"
+              keySplines="0.42 0 0.58 1;0.42 0 0.58 1"
+              values="M22 89 Q 32 85, 42 89 T 62 89 T 78 89;M22 89 Q 32 93, 42 89 T 62 89 T 78 89;M22 89 Q 32 85, 42 89 T 62 89 T 78 89" />
+          </path>
+          <path fill="none" stroke="#EEF4ED" stroke-width="1.8" stroke-linecap="round" opacity="0.6">
+            <animate attributeName="d" dur="3.4s" repeatCount="indefinite"
+              calcMode="spline" keyTimes="0;0.5;1"
+              keySplines="0.42 0 0.58 1;0.42 0 0.58 1"
+              values="M32 95 Q 40 92, 48 95 T 64 95;M32 95 Q 40 98, 48 95 T 64 95;M32 95 Q 40 92, 48 95 T 64 95" />
+          </path>
+        </svg>
+      </div>
+    </div>
+    <h1>Sicherheitsunterweisung beginnt nicht im Hafen.<br /><span class="accent">Sie beginnt zuhause.</span></h1>
+    <p class="sub">
+      Safe2Sail digitalisiert die Sicherheitsunterweisung deiner Crew:
+      Briefing lesen, Verständnis bestätigen, digital unterschreiben —
+      und als Skipper hast du das fertige Protokoll fürs Logbuch.
+    </p>
+    <a class="badge" href="/">Jetzt starten — im Browser</a>
+    <span class="badge soon" style="margin-left:10px">Bald im App Store</span>
+  </div>
+</div>
+
+<section class="block">
+  <div class="wrap">
+    <div class="eyebrow">Der Safe2Sail-Gedanke</div>
+    <h2 class="statement">Sicher an Bord. Lückenlos dokumentiert.</h2>
+    <p class="lead">
+      Mit Safe2Sail bereiten sich Crew und Skipper bereits vor dem ersten Ablegen optimal
+      auf den Törn vor. Die digitale Sicherheitsunterweisung kann von jedem Crewmitglied
+      bequem vor Reisebeginn auf dem eigenen Smartphone durchlaufen werden. So startet die
+      Crew nicht nur entspannter an Bord, sondern auch mit dem Wissen, das im Ernstfall
+      Leben retten kann.
+    </p>
+    <p class="lead">Mit Safe2Sail erfüllst du diese Verantwortung einfach, professionell und nachvollziehbar:</p>
+    <ul class="checklist">
+      <li>Digitale Sicherheitsunterweisung vor Törnbeginn</li>
+      <li>Zeitersparnis beim Einchecken und Briefing im Hafen</li>
+      <li>Vollständige Crewliste mit allen Teilnehmerdaten</li>
+      <li>Persönliche Bestätigung durch digitale Unterschriften</li>
+      <li>Automatisch erzeugtes PDF zur Dokumentation</li>
+      <li>Ideal zur Ablage im Logbuch</li>
+      <li>Mehr Sicherheit für Crew und Skipper</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block alt">
+  <div class="wrap">
+    <div class="eyebrow">Für Skipper</div>
+    <h2>Weniger Aufwand im Hafen, mehr Sicherheit an Bord</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Zeitersparnis</h3>
+        <p>Für den Skipper bedeutet das vor allem eines: mehr Sicherheit, weniger organisatorischer Aufwand und wertvolle Zeitersparnis beim Crew-Check-in vor Ort. Statt die gesamte Sicherheitseinweisung erst im Hafen durchzuführen, machen sich alle Crewmitglieder bereits im Vorfeld mit den wichtigsten Sicherheitsabläufen, Notfallmaßnahmen und Verhaltensregeln vertraut.</p>
+      </div>
+      <div class="card">
+        <h3>Dokumentation</h3>
+        <p>Nach Abschluss der Unterweisung bestätigt jedes Crewmitglied die Teilnahme mit seiner persönlichen digitalen Unterschrift. Safe2Sail erstellt daraus automatisch eine vollständige Crewliste inklusive dokumentierter Sicherheitsunterweisung und aller Einzelunterschriften als PDF — zum Ausdrucken oder digital archivieren, ideal fürs Bordlogbuch.</p>
+      </div>
+      <div class="card">
+        <h3>Kostenlos zum Start</h3>
+        <p>In der Einführungsphase ist Safe2Sail für Skipper und Crew komplett kostenlos — ohne Abo und ohne Zahlungsdaten. Einfach registrieren, Törn anlegen und die Crew einladen. Eine spätere Bezahlfunktion wird rechtzeitig angekündigt und gilt nur für dann neu angelegte Törns.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="eyebrow">Was in der App steckt</div>
+    <h2>Die Sicherheitsunterweisung, die wirklich ankommt</h2>
+    <p class="lead">
+      Vor jedem Törn ist der Skipper verpflichtet, seine Crew in die Sicherheit an Bord
+      einzuweisen. Safe2Sail macht daraus einen sauberen, nachweisbaren Ablauf —
+      statt Zettelwirtschaft oder mündlichem „Haben alle verstanden?".
+    </p>
+    <div class="grid">
+      <div class="card">
+        <h3>Vollständiges Briefing</h3>
+        <p>Alle Sicherheitsthemen von Sturzgefahr bis Rettungsinsel — fachlich fundiert, mit Videos zu Rettungsweste und Bordtoilette. Jeder Punkt wird einzeln gelesen und bestätigt.</p>
+      </div>
+      <div class="card">
+        <h3>Verständnis-Check</h3>
+        <p>Vor der Unterschrift beantwortet jedes Crewmitglied drei Kontrollfragen zur Unterweisung. So wird aus „gelesen" ein nachweisbares „verstanden".</p>
+      </div>
+      <div class="card">
+        <h3>Digitale Unterschrift</h3>
+        <p>Jedes Crewmitglied unterschreibt auf dem eigenen Gerät — mit Zeitstempel und Prüfsumme des unterschriebenen Inhalts protokolliert.</p>
+      </div>
+      <div class="card">
+        <h3>Protokoll fürs Logbuch</h3>
+        <p>Ein Tipp, fertig: Crewliste mit allen Unterschriften als PDF — zum Ausdrucken und Abheften ins Logbuch. Erzeugt lokal auf deinem Gerät.</p>
+      </div>
+      <div class="card">
+        <h3>Törn-Route</h3>
+        <p>Plane deine Route mit Häfen, Buchten und Übernachtungen auf der Karte — die Crew sieht sie direkt in ihrer Törn-Ansicht.</p>
+      </div>
+      <div class="card">
+        <h3>Datenschutz an Bord</h3>
+        <p>Daten liegen DSGVO-konform auf EU-Servern, Törns werden 30 Tage nach Abschluss automatisch gelöscht. Keine Werbung, kein Tracking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt">
+  <div class="wrap">
+    <div class="eyebrow">So funktioniert es</div>
+    <h2>In drei Schritten zum unterschriebenen Briefing</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num"></div>
+        <div>
+          <h3>Skipper legt den Törn an</h3>
+          <p>Törn erstellen, Boot wählen, Route planen. Die vollständige Sicherheitsunterweisung ist automatisch enthalten.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num"></div>
+        <div>
+          <h3>Crew tritt per Code bei</h3>
+          <p>Einladung als 6-stelliger Code oder QR — die Crew liest das Briefing in Ruhe auf dem eigenen Handy, hakt jeden Punkt ab und beantwortet den Verständnis-Check.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="num"></div>
+        <div>
+          <h3>Unterschreiben und ablegen</h3>
+          <p>Digitale Unterschrift, fertig. Der Skipper sieht live, wer unterschrieben hat, und exportiert das Protokoll als PDF fürs Logbuch.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block navy">
+  <div class="wrap">
+    <div class="eyebrow">Warum das wichtig ist</div>
+    <h2>Sicherheit ist nicht nur sinnvoll.<br />Sie ist Teil der Verantwortung eines Skippers.</h2>
+    <p>
+      Nach § 4 der Seeschifffahrtsstraßen-Ordnung sowie den allgemeinen Grundsätzen guter
+      Seemannschaft trägt der Schiffsführer die Verantwortung für den sicheren Betrieb des
+      Schiffes und die angemessene Unterweisung der Crew. Dazu gehört insbesondere, dass
+      sich die Besatzung mit Rettungsmitteln, Mann-über-Bord-Verfahren, Feuerlöschern,
+      Funkanlagen, Notsignalmitteln sowie den wesentlichen Einrichtungen an Bord auskennt.
+    </p>
+    <p>
+      Im Schadenfall stellen Versicherungen häufig die Frage, ob die Crew ausreichend
+      eingewiesen wurde und ob der Skipper seinen Organisations- und Aufsichtspflichten
+      nachgekommen ist. Eine nachvollziehbare Dokumentation der Sicherheitseinweisung kann
+      dabei von erheblicher Bedeutung sein.
+    </p>
+    <p class="closer">
+      Safe2Sail macht aus einer Pflicht einen professionellen Standard — und sorgt dafür,
+      dass Sicherheit genau dort beginnt, wo sie beginnen sollte: <strong>zuhause</strong>.
+    </p>
+  </div>
+</section>
+
+<section class="block">
+  <div class="wrap">
+    <div class="eyebrow">Fragen?</div>
+    <h2>Wir helfen gern</h2>
+    <p class="lead">
+      Bei Fragen zur App, zu deinem Konto oder deinen Daten erreichst du uns unter
+      <a href="mailto:support@safe2sail.de" style="color:var(--brass-dark)">support@safe2sail.de</a>.
+    </p>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Safe2Sail GbR</span>
+    <span>
+      <a href="support.html">Support</a>
+      <a href="konto-loeschen.html">Konto löschen</a>
+      <a href="agb.html">AGB</a>
+      <a href="datenschutz.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
